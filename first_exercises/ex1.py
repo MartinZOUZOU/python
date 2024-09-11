@@ -17,3 +17,5 @@ def afficher_nombres_premiers(limite):
 # Appel de la fonction avec une limite choisie
 limite = int(input("Entrez une limite : "))
 afficher_nombres_premiers(limite)
+
+
