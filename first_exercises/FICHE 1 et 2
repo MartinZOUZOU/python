@@ -1,0 +1,57 @@
+##01-III-B
+# Fonction pour vérifier si un nombre est premier
+def est_premier(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+# Fonction pour afficher les nombres premiers jusqu'à une limite
+def afficher_nombres_premiers(limite):
+    print(f"Nombres premiers jusqu'à {limite} :")
+    for num in range(2, limite + 1):
+        if est_premier(num):
+            print(num, end=" ")
+
+# Appel de la fonction avec une limite choisie
+limite = int(input("Entrez une limite : "))
+afficher_nombres_premiers(limite)
+
+
+##02-I-A
+
+nom='bettig ducourier'
+nom=nom.upper()
+nom1,nom2=nom.split(' ')
+print(nom1,nom2)
+
+nom1, nom2='Bettig','Courdurier'
+prenom,nom="Valerian",nom1+' '+nom2
+i=nom.index(' ')
+print(i,nom[i+1:])
+
+##02-I-B
+
+
+phrase='Je m\'appelle Camille'
+print(phrase)
+print(phrase[-7:])
+print(phrase[::-1])
+
+phrase, prenom="Je m'appelle",'Camille'
+i=phrase.index(' ')
+enonce=3*phrase[i+1]+phrase[i+1:]+prenom
+print(enonce)
+print(enonce[::3])
+
+poeme='ZOUZOU'
+vers=poeme.split('\n')
+print(vers)
+
+##02-II-A
+
+liste=[8,5,1,3]
+liste.sort()
+print(liste)
